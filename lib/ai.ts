@@ -41,10 +41,11 @@ export const AIService = {
             console.log("Groq Raw Response:", content);
             return JSON.parse(content);
 
-        } catch (error) {
-            console.error("Translation Error:", error);
+        } catch (error: any) {
+            console.error("Translation Error Details:", error);
+            // Return actual error message for debugging
             return {
-                translatedText: "Translation Error (Check Console)",
+                translatedText: `Error: ${error.message || "Unknown Error"}`,
                 detectedLang: "unknown"
             };
         }
