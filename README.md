@@ -47,5 +47,3 @@ A full-stack web application serving as a real-time translation bridge between d
     - Add `GROQ_API_KEY` with your actual key key.
 5.  Click **Deploy**.
 
-## Provenance
-Created as part of a coding assignment to demonstrate full-stack architecture, AI integration, and rapid UI development.
